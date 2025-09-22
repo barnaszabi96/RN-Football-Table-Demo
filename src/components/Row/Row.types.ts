@@ -1,7 +1,7 @@
 import { TableData } from '../../data/table.types';
 
-export type RowProps = {
+export interface RowProps {
   index: number;
   item: TableData;
   contentType: 'name' | 'stats';
-};
+}

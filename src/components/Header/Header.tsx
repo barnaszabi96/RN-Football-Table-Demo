@@ -1,11 +1,7 @@
 import { ScrollView, View } from 'react-native';
 import { Cell } from '../Cell/Cell';
 import { styles } from './Header.styles';
-import { RefObject } from 'react';
-
-type HeaderProps = {
-  scrollRef?: RefObject<ScrollView | null>;
-};
+import { HeaderProps } from './Header.types';
 
 export const Header: React.FC<HeaderProps> = ({ scrollRef }) => {
   return (
